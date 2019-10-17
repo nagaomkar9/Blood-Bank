@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <script src="register.js">
+             </script>
+        <title>Blood Donars</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function verify_uname(x)		
+                
+		 {			
+			var xhr= new XMLHttpRequest(); 
+				
+
+			var url = 'signupverifyajax.php?js_var=' + x;
+			xhr.open('GET', url, false);
+			xhr.onreadystatechange = function () {
+				if (xhr.readyState===4 && xhr.status===200) {
+                                                var c=xhr.responseText;
+                                                document.getElementById("p4").innerHTML=c;
+                          
+				}
+			}
+			xhr.send();
+                        return false;
+		}
+           </script>
+    </head>
+    <body background="4.jpg">
+    <center>
+        <h1 class="b1"><img src="blood1.png" width="200px" height="150px" >
+                Blood Donars</h1>
+    </center>
+        <div>
+            <p id="p1">
+                <b><u>Welcome</u>  </b></p><br>
+            <p id="p2">
+<b>Every Year Thousands of units of blood is required in and around Hyderabad & Secunderabad. HyderabadBloodDonors is an online platform where donors and recipients or patients could meet together. Our charitable blood donors donate blood for emergency need, the needy and natural calamities.
+
+HyderabadBloodDonors which is under the aegis of  Lions Club Of  Secunderabad  Pearls is a non-profit, non-commercial online boundary of social dedication which is a device to use the power of the Internet to help common people.
+</b>            
+</p>
+        </div>
+    <center>
+        <form action="mail.php" method="GET" onsubmit="return verify()" autocomplete="on">
+            <table>
+        <tr>
+        <td>email*</td>
+        <td><input type="text" name="gmail"  onfocus="focusfunc(this.id)" onblur="verify_uname(this.value)" onchange="fun(this.id)" id="pass" required><td>
+        <td colspan="2" id="p3"></td> 
+        <td></td>
+        <td colspan="2" id="p4" ></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td></td>
+        <td>
+            <input type="submit" value="verify email" >
+        </td>
+    </tr>
+            </table>
+        </form>
+    </center>
+    </body>
+</html>

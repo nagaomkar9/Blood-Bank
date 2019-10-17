@@ -1,0 +1,46 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 3 Mar, 2018, 10:04:20 PM
+    Author     : omkar
+*/
+
+ h1.b1
+            {
+                color:red;
+                font-family:Courier;
+            }
+            #p1
+            {
+                text-align: center;
+                font-size: 19px;
+            }
+            #p2
+            {
+                font-size: 15px;
+                text-align: justify;
+            }
+            p.d1
+            {
+                 color:red;
+            }
+             #p3
+            {
+                font-size: 20px;
+            }
+            div.d2
+            {
+            position:relative;
+            left:500px;
+            top:2px;    
+            }
+            
+            button.b2
+            {
+                 padding: 15px 25px;
+                 background-color: #f10c15;
+                 font-size: 16px;
+            }

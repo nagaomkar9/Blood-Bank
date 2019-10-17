@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <script src="register.js" >
+       </script>
+       
+    <title>hi blood donar!</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body background="4.jpg">
+    <center>
+        <h1 class="b1"><img src="blood1.png" width="200px" height="150px" >
+                Blood Donars</h1>
+    </center>
+        <div>
+            <p id="p2">
+        <strong>
+        We welcome enrollment from medically fit BLOOD DONORS between the age of 18-55 years, and not less than 45 kgs in weight, located in and around Hyderabad & Secunderabad. If you already have an account with us, please login .
+
+We are very glad that you are signing up as donor. To register as a blood donor is a responsibility. 
+
+        </strong>
+    </p><br><br>
+    <p style="text-align: center">
+        <b>
+            FIELDS marked with (*) are mandatory
+        </b>
+    </p>
+    <center>
+        <form action="hello.php" method="POST" onreset="resetby()" onsubmit=" return verify()" enctype="multipart/form-data">
+            <table>
+    <tr>
+        <td>name*</td>
+        <td><input type="text" name="name" onfocus="focusfunc(this.id)" onblur="blurfunc(this.id)" id="user" required></td>
+    </tr>
+    
+    <tr>
+        <td >password*</td>
+        <td><input type="text" name="passes" onfocus="focusfunc(this.id)" onblur="fun99()" id="passes" required></td>
+        <td colspan="4" id="td99"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr><td><br></td></tr>
+    <tr rowspan="2">
+        <td>Select an image </td>
+        
+    </tr>
+    <tr>
+        <td>to upload:*</td>
+        <td><input type="file" id="image" name="image"></td>
+    </tr>
+    <!--<tr>
+        <td>
+            name of the image*
+        </td>
+        <td><input type="text" name="imgname" id="imgname"></td>
+    </tr>-->
+    <tr>
+        <td rowspan="2">
+            Gender*</td>
+        <td><input type="radio" name="gender" value="male" checked="checked">male</td>
+    </tr>
+    <tr>
+        <td><input type="radio" name="gender" value="female">female</td>
+    </tr>
+    <tr>
+        <td>age*</td>
+        <td><input type="number" name="age" id="age" onchange="fun1(this.id)" required></td>
+        <td colspan="3" id="td1"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>weight*</td>
+        <td><input type="number" name="weight" id="weight" onchange="fun4(this.id)" required></td>
+        <td colspan="3" id="td3"></td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr><td><p>city*</p></td>
+        <td><select name="city" required>
+                <option value="">none</option>
+                <option  value="hyderabad">hyderabad</option>
+                <option  value="vijayawada">vijayawada</option>
+                <option value="secunderabad">secunderabad</option>
+            <option value="warangal">warangal</option>
+            <option value="karimnagar">karimnagar</option>
+            <option value="tenali">tenali</option>
+            <option value="bombay">bombay</option>
+            <option value="delhi">delhi</option>
+            <option value="chennai">chennai</option>
+            <option value="kolkata">kolkata</option>
+            <option value="bangaluru">bangaluru</option>
+            <option value="guntoor">guntoor</option>
+            </select> </td>
+    </tr>    
+    <tr>
+        <td>blood group*</td>
+        <td colspan="2"><select name="bloodgp" required>
+                <option value="">none</option>
+                <option  value="O(+ve)">O(+ve)</option>
+                <option  value="O(-ve)">O(-ve)</option>
+                <option  value="A(+ve)">A(+ve)</option>
+            <option value="A(-ve)">A(-ve)</option>
+            <option value="B(+ve)">B(+ve)</option>
+            <option value="B(-ve)">B(-ve)</option>
+            <option value="AB(+ve)">AB(+ve)</option>
+            <option value="AB(-ve)">AB(-ve)</option>
+            </select> </td>
+            <td></td>
+    </tr>
+    <tr>
+        <td>contact no*</td>
+        <td><input type="number" id="c2" name="contactno" onchange="fun2(this.id)" required>
+        <td colspan="2" id="td2"></td>  
+        <td></td>
+    </tr>
+    <tr>
+        <td><input type="submit" name="submit" value="submit"></td>
+        <td><input type="reset"></td>
+    </tr>
+    </table>
+    </form>
+    </center>
+    </body> 
+</html>
+
+
+
+
+
+
+
+
+
+ 

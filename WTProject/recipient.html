@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        <title>hi recipient</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>    
+    <body background="4.jpg">
+    <center>
+        <h1 class="b1"><img src="blood1.png" width="200px" height="150px" >
+                 Blood Donars</h1>
+    </center>
+    
+    <form action="recipient.php" method="POST">
+        <center>
+            <br><br><br><br>
+            <p class="d1"><u>NOTE:Please Fill All The Fields</u></p>
+        <table>
+            <tr><td>blood group</td>
+                <td><select name="bloodgp" required>
+            <option value="">none</option>
+                <option  value="O(+ve)">O(+ve)</option>
+                <option  value="O(-ve)">O(-ve)</option>
+                <option  value="A(+ve)">A(+ve)</option>
+            <option  value="A(-ve)">A(-ve)</option>
+            <option  value="B(+ve)">B(+ve)</option>
+            <option  value="B(-ve)">B(-ve)</option>
+            <option  value="AB(+ve)">AB(+ve)</option>
+            <option  value="AB(-ve)">AB(-ve)</option>
+                    </select></td></tr>
+            <tr><td>place</td>
+                <td><input type="text" name="city" pattern="[A-Z , a-z]{3,20}" required></td></tr>
+            <tr><td><input type="submit" value="search"></td></tr>
+        </table>
+        </center>
+    </form>
+        
+    </body>
+</html>
+
